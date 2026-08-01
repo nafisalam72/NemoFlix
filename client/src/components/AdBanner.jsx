@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 
 export default function AdBanner({ type = 'horizontal' }) {
-  // আপনার Google AdSense-এর Publisher ID এবং Slot ID এখানে বসাতে হবে
-  const clientID = import.meta.env.VITE_ADSENSE_CLIENT_ID || "ca-pub-XXXXXXXXXXXXXXXX"; 
+  // আপনার Google AdSense-এর Publisher ID
+  const clientID = "ca-pub-9115388853341654"; 
+  // Slot ID (AdSense ড্যাশবোর্ড থেকে পাবেন)
   const slotID = type === 'horizontal' ? "1234567890" : "0987654321";
 
   useEffect(() => {
